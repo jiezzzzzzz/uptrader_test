@@ -1,4 +1,5 @@
 Инструкции по запуску:
+
 git clone https://github.com/jiezzzzzzz/uptrader_test
 
 python manage.py makemigrations
