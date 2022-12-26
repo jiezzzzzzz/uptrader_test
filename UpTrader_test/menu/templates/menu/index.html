@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+{% load menu_extras %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+    {% load menu_extras %}
+</head>
+<body style="background-color: black">
+    <div class="container">
+        <h1 align="center">Добро пожаловать</h1>
+        <div align="center">
+            {% draw_menu 'Products name' %}
+            <br>
+            <br>
+            {% draw_menu 'Services' %}
+        </div>
+
+    </div>
+
+</body>
+</html>
