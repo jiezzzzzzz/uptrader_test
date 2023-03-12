@@ -1,11 +1,36 @@
-Инструкции по запуску:
+# Древовидное templatetags-меню
 
-git clone https://github.com/jiezzzzzzz/uptrader_test
+---
 
-python manage.py makemigrations
+Тестовое задание для UpTrader. 
 
-python manage.py migrate
+---
 
-python manage.py createsuperuser
+Приложение предстаялет из себя набор связанных между собой данных в формате:
+
+```
+parent
+---child
+---child
+```
+У каждого элемента-родителя может быть неограниченное количество дочерних элементов. Родительство указывается в административной панели.
 
 Данные на страницу добавляются из админки.
+
+---
+
+## Инструкции по запуску:
+
+Скачать проект себе на машину: 
+
+<code>git clone https://github.com/jiezzzzzzz/uptrader_test</code>
+
+Накатить миграций:
+
+<code>python manage.py migrate</code>
+
+Создать суперюзера для админки:
+
+<code>python manage.py createsuperuser</code>
+
+
